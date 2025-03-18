@@ -14,7 +14,11 @@
     "@headlessui/vue": "^1.7.19",
     "@heroicons/vue": "^2.1.1",
     "vuedraggable": "^4.1.0",
-    "@vueuse/core": "^10.7.2"
+    "@vueuse/core": "^10.7.2",
+    "vue-i18n": "^9.9.1",
+    "chart.js": "^4.4.1",
+    "vue-chartjs": "^5.3.0",
+    "date-fns": "^3.3.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.3",
