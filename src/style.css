@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f5f9fb;
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Material Design-like transitions */
+.transition-all {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Material Design-like elevation */
+.elevation-1 {
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.elevation-2 {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+/* Material Design-like inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  @apply border-0 border-b-2 border-gray-200 bg-transparent px-0 py-2 focus:border-primary-850 focus:ring-0 transition-all;
+}
+
+/* Search input specific styles */
+input[type="search"] {
+  @apply border border-gray-200 bg-transparent py-2 pl-10 pr-3 focus:border-primary-850 focus:ring-0 transition-all;
+}
+
+/* Material Design-like buttons */
+.btn {
+  @apply px-6 py-2 rounded-md font-medium transition-all transform hover:scale-105 active:scale-95;
+}
+
+.btn-primary {
+  @apply bg-primary-850 text-white hover:bg-primary-950;
+}
+
+.btn-outline {
+  @apply border-2 border-primary-850 text-primary-850 hover:bg-primary-850 hover:text-white;
+}
